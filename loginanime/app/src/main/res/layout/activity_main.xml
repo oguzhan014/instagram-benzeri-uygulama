@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/shape4">
+
+    <RelativeLayout
+        android:id="@+id/resim"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="5dp"
+        tools:ignore="NotSibling"
+        android:background="@drawable/shape2">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:background="@drawable/shape1">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignLeft="@id/resim"
+                android:layout_alignTop="@id/resim"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/merc1"
+                tools:ignore="NotSibling" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="220dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="151dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="-271dp"
+            android:gravity="center"
+            android:text="MERCEDES AMG F1"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#100F0F"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/shape3"/>
+    
+    <RelativeLayout
+        android:id="@+id/panelim"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/shape5">
+        
+        <EditText
+            android:id="@+id/personname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="20sp"
+          android:hint="ad-soyad"
+            android:inputType="textPersonName"/>
+        <EditText
+          android:id="@+id/key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="20sp"
+            android:hint="sifre"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/emailbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="20sp"
+            android:hint="*****@*****.com"
+            android:inputType="textEmailAddress"/>
+
+        <Button
+            android:id="@+id/btngir"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="226dp"
+            android:text="Giriş"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/myrip"/>
+
+        <Button
+            android:id="@+id/btnkayit"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="177dp"
+            android:layout_marginTop="224dp"
+            android:background="@drawable/myrip"
+            android:text="Kayıt"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="297dp"
+        android:layout_height="62dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="53dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/toto"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/lewis"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/russel"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
